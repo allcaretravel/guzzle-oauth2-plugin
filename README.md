@@ -1,26 +1,26 @@
-![logo](http://www.sainsburys.co.uk/homepage/images/sainsburys.png)
+![logo](http://www.Act.co.uk/homepage/images/Act.png)
 
 Sainsbury's guzzle-oauth2-plugin
 ================================
 
 Provides an OAuth2 plugin (middleware) for [Guzzle](http://guzzlephp.org/).
 
-[![Build Status](https://travis-ci.org/Sainsburys/guzzle-oauth2-plugin.svg?branch=master)](https://travis-ci.org/Sainsburys/guzzle-oauth2-plugin)
-[![Code Coverage](https://scrutinizer-ci.com/g/Sainsburys/guzzle-oauth2-plugin/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Sainsburys/guzzle-oauth2-plugin/?branch=master)
+[![Build Status](https://travis-ci.org/Act/guzzle-oauth2-plugin.svg?branch=master)](https://travis-ci.org/Act/guzzle-oauth2-plugin)
+[![Code Coverage](https://scrutinizer-ci.com/g/Act/guzzle-oauth2-plugin/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Act/guzzle-oauth2-plugin/?branch=master)
 
 Version 3.x (on the `master` branch) is intended for Guzzle 6:
 ```json
-        "sainsburys/guzzle-oauth2-plugin": "^3.0"
+        "Act/guzzle-oauth2-plugin": "^3.0"
 ```
 
 Version 2.x (on the `release/2.0` branch) is intended for Guzzle 5:
 ```json
-        "sainsburys/guzzle-oauth2-plugin": "^2.0"
+        "Act/guzzle-oauth2-plugin": "^2.0"
 ```
 
 Version 1.x (on the `release/1.0` branch) is intended for Guzzle 3 [Unmaintained]:
 ```json
-        "sainsburys/guzzle-oauth2-plugin": "^1.0"
+        "Act/guzzle-oauth2-plugin": "^1.0"
 ```
 
 ## Features
@@ -38,9 +38,9 @@ First make sure you have all the dependencies in place by running `composer inst
 ```php
 use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;
-use Sainsburys\Guzzle\Oauth2\GrantType\RefreshToken;
-use Sainsburys\Guzzle\Oauth2\GrantType\PasswordCredentials;
-use Sainsburys\Guzzle\Oauth2\Middleware\OAuthMiddleware;
+use Act\Guzzle\Oauth2\GrantType\RefreshToken;
+use Act\Guzzle\Oauth2\GrantType\PasswordCredentials;
+use Act\Guzzle\Oauth2\Middleware\OAuthMiddleware;
 
 $baseUri = 'https://example.com';
 $config = [
@@ -92,17 +92,17 @@ $response = $client->request('GET', '/api/user/me');
             </argument>
         </service>
 
-        <service id="acme.oauth.grant_type" class="Sainsburys\Guzzle\Oauth2\GrantType\PasswordCredentials" public="false">
+        <service id="acme.oauth.grant_type" class="Act\Guzzle\Oauth2\GrantType\PasswordCredentials" public="false">
             <argument type="service" id="acme.oauth.guzzle.client"/>
             <argument>%acme.oauth.config%</argument>
         </service>
 
-        <service id="acme.oauth.refresh_token" class="Sainsburys\Guzzle\Oauth2\GrantType\RefreshToken" public="false">
+        <service id="acme.oauth.refresh_token" class="Act\Guzzle\Oauth2\GrantType\RefreshToken" public="false">
             <argument type="service" id="acme.oauth.guzzle.client"/>
             <argument>%acme.oauth.config%</argument>
         </service>
 
-        <service id="acme.oauth.middleware" class="Sainsburys\Guzzle\Oauth2\Middleware\OAuthMiddleware" public="false">
+        <service id="acme.oauth.middleware" class="Act\Guzzle\Oauth2\Middleware\OAuthMiddleware" public="false">
             <argument type="service" id="acme.oauth.guzzle.client"/>
             <argument type="service" id="acme.oauth.grant_type"/>
             <argument type="service" id="acme.oauth.refresh_token"/>

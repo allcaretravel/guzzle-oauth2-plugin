@@ -1,6 +1,6 @@
 <?php
 
-namespace Sainsburys\Guzzle\Oauth2\GrantType;
+namespace Act\Guzzle\Oauth2\GrantType;
 
 /**
  * Authorization code grant type.

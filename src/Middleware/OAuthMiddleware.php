@@ -1,11 +1,11 @@
 <?php
 
-namespace Sainsburys\Guzzle\Oauth2\Middleware;
+namespace Act\Guzzle\Oauth2\Middleware;
 
-use Sainsburys\Guzzle\Oauth2\AccessToken;
-use Sainsburys\Guzzle\Oauth2\GrantType\GrantTypeBase;
-use Sainsburys\Guzzle\Oauth2\GrantType\GrantTypeInterface;
-use Sainsburys\Guzzle\Oauth2\GrantType\RefreshTokenGrantTypeInterface;
+use Act\Guzzle\Oauth2\AccessToken;
+use Act\Guzzle\Oauth2\GrantType\GrantTypeBase;
+use Act\Guzzle\Oauth2\GrantType\GrantTypeInterface;
+use Act\Guzzle\Oauth2\GrantType\RefreshTokenGrantTypeInterface;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Promise\PromiseInterface;
 use Psr\Http\Message\RequestInterface;

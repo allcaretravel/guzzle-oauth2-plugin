@@ -1,8 +1,8 @@
 <?php
 
-namespace Sainsburys\Guzzle\Oauth2\GrantType;
+namespace Act\Guzzle\Oauth2\GrantType;
 
-use Sainsburys\Guzzle\Oauth2\AccessToken;
+use Act\Guzzle\Oauth2\AccessToken;
 
 interface GrantTypeInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sainsburys\Guzzle\Oauth2;
+namespace Act\Guzzle\Oauth2;
 
 use InvalidArgumentException;
 
