@@ -1,6 +1,6 @@
 <?php
 
-namespace Sainsburys\Guzzle\Oauth2\Tests;
+namespace Act\Guzzle\Oauth2\Tests;
 
 
 use GuzzleHttp\Handler\MockHandler;

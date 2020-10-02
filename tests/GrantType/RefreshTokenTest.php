@@ -1,9 +1,9 @@
 <?php
 
-namespace Sainsburys\Guzzle\Oauth2\Tests\GrantType;
+namespace Act\Guzzle\Oauth2\Tests\GrantType;
 
-use Sainsburys\Guzzle\Oauth2\GrantType\RefreshToken;
-use Sainsburys\Guzzle\Oauth2\Tests\TestBase;
+use Act\Guzzle\Oauth2\GrantType\RefreshToken;
+use Act\Guzzle\Oauth2\Tests\TestBase;
 
 class RefreshTokenTest extends TestBase
 {

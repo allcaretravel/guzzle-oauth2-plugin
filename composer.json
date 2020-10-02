@@ -1,5 +1,5 @@
 {
-    "name": "sainsburys/guzzle-oauth2-plugin",
+    "name": "act/guzzle-oauth2-plugin",
     "description": "An OAuth2 middleware for Guzzle",
     "license": "MIT",
     "require": {
@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Sainsburys\\Guzzle\\Oauth2\\": "src"
+            "Act\\Guzzle\\Oauth2\\": "src"
         }
     },
     "require-dev": {
@@ -17,7 +17,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Sainsburys\\Guzzle\\Oauth2\\Tests\\": "tests"
+            "Act\\Guzzle\\Oauth2\\Tests\\": "tests"
         }
     },
     "authors": [
